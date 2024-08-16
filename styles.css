@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+}
+
+#currentDate {
+    font-size: 20px; /* Increased from 16px */
+    color: #333333;
+}
+
+#currentTime {
+    font-size: 20px; /* Increased from 16px */
+    color: #333333;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    margin-top: 80px; /* Adjusted to give more space for the header */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #cce7ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#dateInput, #timeInput {
+    padding: 10px;
+    border: 2px solid #cce7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#addTaskBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#addTaskBtn:hover {
+    background-color: #45a049;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e1f5fe;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+li span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+li .doneBtn, li .deleteBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+li .doneBtn {
+    background-color: #4caf50;
+}
+
+li .deleteBtn:hover {
+    background-color: #d32f2f;
+}
+
+li .doneBtn:hover {
+    background-color: #388e3c;
+}
+
+li.done span {
+    text-decoration: line-through;
+    color: #999999;
+}
